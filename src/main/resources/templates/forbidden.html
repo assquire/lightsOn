@@ -1,0 +1,21 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Private room</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+</head>
+<body>
+
+<header th:insert="blocks/header.html :: header"></header>
+
+<div id="rooms" class="container mt-5">
+    <div>
+        <h1  style="font-style: italic; font-variant-caps: all-petite-caps">Unfortunetely, You cannot enter this room</h1>
+        <form th:action="'/rooms'">
+            <button class="btn btn-warning" type="submit">Go to Main</button>
+        </form>
+    </div>
+</div>
+
+</body>
+</html>
